@@ -7,6 +7,7 @@ import {useHttp} from '../hook/http.hook'
 import '../App.scss'
 import info from '../assets/info.svg'
 import Switch from './Switch'
+import {Search} from './Search'
 
 export const Navbar = () => {
   const history = useHistory()
@@ -64,6 +65,7 @@ export const Navbar = () => {
           <li><NavLink to="/cart">Корзина</NavLink></li>
         </ul> 
         <h1>Concept</h1>
+        <Search/>
         <div>
             {auth.isAuthenticated?
             <div >
